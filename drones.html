@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дронові Технології у Військовій Справі</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #34495E;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            background-color: #16A085;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        section {
+            padding: 40px 10%;
+            background-color: #ecf0f1;
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        footer {
+            background-color: #34495E;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .info-box {
+            background-color: #16A085;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInBox 2s forwards;
+        }
+        .info-box h3 {
+            font-size: 1.5em;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInBox 3s forwards;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .form-container button {
+            background-color: #16A085;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #1abc9c;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInBox {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+          /* Стилізація зображень */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            max-width: 32%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Дронові Технології у Військовій Справі</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="combat-systems.html">Системи управління</a>
+    <a href="mobile-tech.html">Мобільні технології</a>
+    <a href="cybersecurity.html">Кібербезпека</a>
+    <a href="ai.html">Штучний інтелект</a>
+    <a href="more-info.html">Подальші розробки</a>
+</nav>
+
+<section>
+    <h2>Дронові Технології у Військовій Справі</h2>
+    <p>Дронові технології мають великий потенціал у військовій сфері, надаючи можливість здійснювати різноманітні операції без ризику для життя військових. Військові безпілотні літальні апарати (БПЛА) використовуються для розвідки, доставки вантажів, а також для виконання бойових місій. Технології безпілотних літальних апаратів постійно удосконалюються, і вони стають невід'ємною частиною сучасних армій.</p>
+    <div class="image-gallery">
+        <img src="https://media.istockphoto.com/id/521398975/photo/camera-equipped-radio-controlled-helicopter.webp?a=1&b=1&s=612x612&w=0&k=20&c=dXC5bSk5OGhKyHTxJUK2DLHzXwTzZek4eOpfcb-eD_o=" alt="Дрон для військової розвідки">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUSExMVFRUVFRUXGBcVFRUYFRYYFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0lHyUtLS0tLS0tLS0tLS0tLSstLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0rLS0tLS0tLS0tLf/AABEIAK0BIwMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAEBQIDAAEGBwj/xAA8EAACAQMDAwIFAgUDAgUFAAABAhEAAyEEEjEFQVEiYQYTcYGRMqEUQrHR8AdywTNSU2KC4fEjJEOS0v/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACYRAAICAgIDAAIBBQAAAAAAAAABAhEDIRIxBEFRE2GhIoGRwfD/2gAMAwEAAhEDEQA/ALbS0QlU2rdEqtdJzFq2p4qWwistCiFHmiwoihNE27lQW1Ujbo0w2i8VMNQ6ir0NFBZZM1IJUdlbUkUAWARVq5FVgzUNp7UDJXDUBUTc81O21AiaXIq9bs0OyzUrcigZfvNTF01OxcnBFEtp1NKx0L5q60D5qVzTxxVKtTEHLxzVbrVSvVoNIZSy1pTVpFRK0BRNBNbNuoo0VelwVLGDPboa5arPiXSm7prqK7IxQkMvIKkMOCMHbB9ial0vT7bFsSTCLk8nANF6Fu6rQI9qqmt0yu26HdKaYUAPboe5bpiyVU9uqsQsKVTdSmFy3VDpTAWulDXEpm6UO9mixC3ZWUZsrKLAlbolaptrRCipGSVTV6NVKVYKBBCmrUbzQyVetFDsICA8VrbUVNWhqANAVapqSpUhbosKNbagZo2zpZqVzTxgZNFodMX/AC55rTpHFMm0pHIqp7QNCkKgFLlW27lau2IqoVfZIwVhV4JpdauxRa6ipaKTLHBocKZq7+IrRuigDfyieKsW0w5rLd+Kv+cDSdjRSLdZtqTOKra5SGLeu3LgVPlHbN1A7d1RjBI+8D70xQ+/381w3+py6lktHTo7oC/zUUblIIULvRTuflhABHJNI/gnS/MQbeoaq1qfX8yys3LduGO0fKdGAhY7+aTYld/o9XusCpB7gj9q5jWfGVjRabTG4Hdrli2wS2FLxsWSQxAA95zmOKC+I+vXtBpzddhfIKgD+Hu2+WA3XLgJVRnwJMCvItfrZtLd3FrrEiCRAt21VEIP1BUDttpNlo9/6T8Q6XV/9G8jNAJQnbdWezWz6h+KLuW6+aLOrN3apAZiQSwWbq7d20W2USIyee4xC16T/p58YXRdGmu3jqLTuVtM8DULj0BpaCGxEkmYjmpTCdRqz0gpUGSi7bo5IB9Q5U4YfVTmPetNaq7FQtu26GdKavboW7bp2TQua3UCsUW61RcFMQMbQrdSrKAPM+m/Ft63i4NwHnmut6b8T2LvLbT4Neai5aubZYq2cfyj71fdQAbMTjI7j2rHnKPfQ6R6/aYNkEH6VcFryDpvUL1k70doGNpM12XTPjQQBeWD5HFXHJFiao7BVq5VoDQdTtXRKODTFRVgTmprVYFWLQARbapI0VXberJBqRhdu5RlhwCDzSxKvtvSaLTHy3lZcigdXp05FCW9TFY16aSVDbsi+nkUBd0xFMheFV3Hq02Q0hZ8upBTRLW5qvYauyKKg1TD0XZ0JatXenMPelyQUwbfUgTVlvRMecUXb6d70NoaTAN5rXzDRV/SlaGiiwIkzSL4o6fpGT5upXZtIAvIGFy34begkKPeQO9PnWlXWhqSgGmNsOWALXdxCrmWVV/U3gGBQwRy/UOp3tLa3G/Z1+jZHkXXto5X0AqLslbzEMcRnI8V5brXtpeP8OLgtuohb6DegYCRjDofOJ/c9x134XtWfnPevObgt2bgutNtWv3bjqSlu2hA2rZBgBiA09q4/wCJL1y63zGvi/cEDeBcVvlqMKVNtQTySZzNZP4aJgNu+1j5bW3YXEJYFCQAOBOJDDOZ4NdX/pgbf8Tbd03ESLbsTKsEhmUCAQS0QQY5mRXIabVxG4gg8ieR7+/9q63/AE36QH1gcXCFtKGAERcPBnMgSQcD8VK7Kl0exathdUT6XXKXFwyn69we44NMtBqd6DfAfv7+9IdbYL23RW2sykBvBIwap0WoVEVHZVdQAylhM4nnkZ59xWriZcqOpdBQ12zQFu8exq9NWeDmlTKtFN1KFupR5ug1TcWgQvKVlEm3W6dio+dWEHFMulW5ko3qGdrZBoLS294iI8/8Vctsgh07HMVmuipNXTG1oBwf5XHK/wBqi2hYA8xzV91kuILikC4D9oHIo+xrAywYNcWblBco9DjT0+xPpbzW+GM10mi+KtRbMH1iB/k0vu6e22ODWxYKLtX1Hme8eKzh5TXsbxnWWvjlJVWUgnk9hXVaLXW7olGB+9eNam2x9RWO1b0nUntH0sVJ8VsvM31ZPA9vFTWvMuk/HF1YV13Ad+9dOnxnZ2K3cmI8V0w8iEtJktUdWrVOaBsdQttADCSJiiwa1AxqxXqQrAlOwMD1KaxbdSFunYUSRDVnySMxVguEDFWPqZFK2OkasORTGxmlllqMsX6llIYHTKag+j8GtfxOKrGoNRsrQFqrDUvdT3FP3We9D39PHIq1Ilo53X3flo9w8IrMf/SCf+KG6brxeti4MAzM9iOc1R8R65bhawshOHYHmOVHtP5jxzxvUetNaT+Gsgn1EkmMk+T4wPxXLk8xRnXr/Z0Q8Vyjf/UT/wBRddYurbX5hPy2YsEgkyIAH94Ncb1BVZEK2WVnubWusxMDblTPJiO0YNErp5cEsWcvBiWCluFSeWJrqOof6fNfS3OouWiNxKbQwG6MTI9WMmT/AHnBkyZMvL5/grJGEIUFdB0Wk1Wmaz8m2yWz8uYliIwd59QYSRM9hEcCOi/080lvfIa5u2xuIVkK91a2FM8fj3NS+CumPoN2lvOpN1i9vYrkehQG3MQApICnb7HmuqZa9FqLekcNtHJno2ts7/kawlZ/+ml9fmQNow139Q9U+cRXG2vhPWOYvWkdbZ3bblwKbpMyBctyfMzBkivVrimhrlLgmJs5rovSNIMJbvWXHNs376sPOA8MPcSK6rTXAggFj/uZmP5Yk0G7DuAY81A6iq4i5DUX6x7xpWNTU/4qpcR2G/xBrKB/iK1SodniujtMkkGJ7VPR2NrnJ2ntzRdy3gHsBEjnBqPyjG4RkxB+kmuDn7NipCFLQTtwCPE0601ocKe1J3X0wDkHPv4FEaO7dtqysPSOQeZ9jWsJri00ZyhbTsbFMmOB55NbsudxPFDaZg4L2yQYHpb/AINdJ0TpoZTd1BNqyAJMEliYAAjgZ5/+a5svjwr+l7+FRcrpoF0wNz07C58AEn8ChetdFFpTea1eEdhbYn+mBg5OK9Q0Wns2xFsFRAxthu+WmD96C61ccD0EthoEAyY9Msf0571hHEou2zo4HjuhnUE/JklclWABjyCCZ74oy0rcMpBqXXOoIusNywFWGQb0EAsBk45lp+1dnptINQgYBcgHkSCeRAzWufCuKaREUrpnIrrLi5UsGHvXV9F+NXEC6s9sULq/hx0Mzg/cfT2PsaR9T0b2vUBioxZZY3SCeNVaPYtBrkuqGU80YDXi3TesXLcQxAHmuq6f8aMCA4keRXowzwlq9nPtHoQapTSLQfEdm4QA0GnFq8rcEGtB2XSa1tmtq1SBpgaCkVIEirUIqw8UuQ+JG3f81atyhzFQmKAGAY0r6119US5aF2386NqpvXeGYCPTMyAZobqXXrenHrMsM7Fy31I7CvJOq9Etubps3Ln8RLXHFxgwu7judZHdSYiTgCZzGGXIo69m2OLexpqb5QndIik+v1RcQvnMd/FV9B6o+p/+3eWucJyWxynn79vMRXonwp8FfIPzrsG5yqDIT3J4LfTA9+3nQ8ebnX8nXPPFRtAnwT8JvaI1Oow+Tbtf9m4QXcf98EiO05zx2YtAipG0wq3YRXqwgoKkcMpObtgNzS0FesEUx1RIFAPrccZrWLZm6BHBoa6BTZijDwaF1Gm+4qlIlxFFwUNcFG37VBXBWqZm0UmoE1NqqY0CJBqyq5rVIZwVwgJHt+45pcGwI96IusCjCcjjtig0jvwO1ePBaOoJ+WIk5/496v1FwkxzgZNS0YkztIHbxTS2o2qGAILT7mDUPJxdAgvo+gVnyCFhVgRPuQDzn810Wg0iXFJuAszEA73J/RgKBbIWBHFQ6UUEkE5IgGMDiQRiKF1l5kut8shZyEIlCw5J7qTPIkeaE/R0xVI6E3kT5bBElR8s9yieD3jArjutdXLO95N53ei2oU7cxb/TEEyxIHPNMeragvb9QYNIIFpzIYwDDCJA5yCKQLfWxqLAIYra9bA7Se+09gBNVFWwkOel/DynTG26+oqWEjG9hMz7UV0C29sBf0gZhjIBIA85ou51kNcUBBbHqESCeMsSpIOYH3Nb0ARj65OdpgcYkSAD/kUm3YKkX6tmNu4xVR/0zuUmCZK5BAzE0tN4EQwBorrOkt2rJcSCxG3dJJHjk7cZ94pPZc3FJ7A1hl7szm6ZJ9AjggYoL+D2TGSO1GAtB7TQWl1ZttLCZqFJoh0yh70kcqaL6d1y/aDQSfrRQdLs7hHvQw0YCsAfua3wZXFURJJl1j4n1RMbgB5NdB0X4sZXC3mBB71xqMDjiKEbSGdwaa6Fn32RR7tpNYlwSrA0WGrxnoXVWsOpDGO6/wBq9Hf4jC2vmfLY8YA4JGJHiuhZo1sqKbdIfX7iqpZiFA5JMAfeuK678VEh7elDbgMvEFR3IDCB9T+KD+JuoapYe4ohoCr6bgUnttI/V9BSLU2d9q5uXYFC7h33H1CAFYgbY+hORiuefkPqJ0xw1tgut1ruyMLTvIAYwTJkrOOQSp5zJ5NA6fXXTqEBwVcBUOAA2NueAQR+feiusdf2KlvT+i3bWG4YSTOGMnmc9yfpXRfAnQb124NbeXaAZUuPUwgxsXhVzO4iTAAxmsoRchzkl0Mei/Afydb/ABr3FMD0W0UhQxUglmJ9XJ4A7HtXcLqIqrIqtnr0IwSVI5ZSbdlz6wnmsfVSBmhG+tU3JFXxQuTCLj7sGgb+nHasN6oG7NUlRLdgbKZrDrGGKtcUNdSq77J6Jk7u0UDet5irt8Vpb0U9oWmA3bDDMUK4p2dQKW6xCTjIoUvoOPwCrKn8o1lVaJo8pvkliO0mB96nbJJA/wAFW/wwC/MJ5ICjuff6VbZAGeK8dy0dQRYBEQ0zyIplpnlwCDAEn2E5pXauruxTTR3jtJPfH7TWEu7BG7uuZtl2PUCYAJGF5JA9s1fqtdbVWuiXuN5aXUCDCzx3H/xNJeozY3FJ2tgleU9v/el1rWzh5JJwxwST5I4rdK1aN1I6VeottweBwYETwDNJLPUCdRcuQY2RtJnugEec5n79q2WgT2n/ADPeqioS5ZvMNltjsJyY/wDORjzP2qopCbbO66JaO0tcAAIEN3IHMDgKPzyTzTWzbthXuu7IFgysQ3/bJ7k8QPH2oLS3GNzY6j5ahnDCApUgbTMkE4nnMcYpf1XXLeD2xgKA6QwO4cMzAfpae3gj3rM0UbHPWtUbukdv1ZRseAyg47YJpb0i+AkFefFAfDnVrXqs3ifluIOTjyQe1O+ki2lvcM+CeT4NY5tUzPMt2ECwGAAoW/01TiPvR+guBpNEPcAMVytohHOX7JRcDFDXkZlxPvTbqF0MwQUQ+jAAMwB5xWnJ+iaOdsr8uNwmartWS7gIMMYAGT9hTm81pv1A/q2qwdChHALen0ye8kUkOjR73y31F2wwOJe4FweBkqwPkMOf0+emKfsf4/p0HT+jiw2+6CGglZgIMYk8g/b70Rr+urZ2slw35xtXdEMMxB7GPx9a4vW2L9gg3JuLPouoSZg8MPp+ewORWzaaHCXdiOoZSoB3BgZUsvcGRBNPiaxVdHYaT4tltrrbKqoJbaQdxSBuM7VgiMZMY5pLqer37l1g9rdOBaJIBjlpxIkE/wBqS3N4gN/0wO4gCeTI5buOYJHir7TSCxLNtXaCThgRAEfywOfp5opIty+jjo2tt23T5qrc2sWCAKVBkwTgcdvpNeg6b4usMypME+a8h0iw2+TzJmny6mzc5EHzWmLyFDRyTuTs9dTUKRgg1B0FeWq10AC1eYAeaO0/xTqrKxct/Mzyvj6V1xzQfsnZ35t1EWia5/pXxhauL65tmYhsU70nUEuiUII4xWt30CohesUHdtkUzupOaHY+aakxOKFxBqBmjNQncUKWq07JaopNgmhnUijxdrbrvHajk12LivQsLVEx5oy5pYyRQ72xRY6MOysqv5FZU6GeRF9x59I4jtFTe9gY9/rULryANoHbHHPNQutP2Mf0rzaNS7SP5xJGfH2pvpVzsOM48E5n+lKU0rmIRj7gHaPvxTrQaQKfW4HJAJyZwDmomhqLZe+zcx5Udj/WkXUNIofcqqoOYJMD/bH3roNVaCqQsR/n5rl7+qcOYh14IbIniVHaKeKPw0UePYRp7imGuEnaZ2BTAAP71fqr6XmFsztRWwcZOfqO1A2VcglF298iTkRj8eO9YLJMm457YBA3R2JE44rWtjst0vULtlAjH5tkTCb4ZRPHuPb+lFarqVplW5bV7ZBgqwwQRByO0Gc+Kpt2Q0i2ixEcSxgT6Sf6+/3o1LD3FKBFPAn0gQe3BM580pU9stSaVIS9O073XgSAOWPHPHvXf2bJFsLxAECs6f0YoBuIkAcDGO9Z168bO0A/rntP6YkcjsefY/WubJyyNJIycZMYdG9Kwe/9aOuaR3/SMniTE/Sa5q31PabZRy3paQxG0wGbIXhhBWYEwD3ppo+rql7T6hmCwyBs+nEB9sE42t/Xmqx+Ipy4t13/AAm6/uKScVZH+DCXl3/rLhFXcAoJMHcQCceMUfdglh81mdd3ptqqxABJC3DLiCDK89qTfGevtXdTcuadywJVw0MoDgerbPuJkear0nxPYCz/AA7fNK7XCEqhMsSfTkE7jmJzAMVpgUeKdDkqegrqOjPyxc371chSrcyV3rDADepHsOeOYXPbVxct3AN9vaAzSQVYMVBaCd0I4kZxNVa/qty/Ho+WixCLxgADPcwB/YSZMkI1jU3BhmCk8wGU8r3gDt7051eioX7F69GvEstpTcUxutGT3MEEcDmD2it2+mMuLSm5bZ1YqAu60yk4ABO5YGe/ePLHqfWVsNuS6rvH60AEZmD5BxiPuYwLpbV/UMbqykzkjaokQ0D79gazb1spujn30l0ObAnBEjx7nx/7V1mg09sIEjAGfc9zRp0hUDc2892Iyfr+aS6zT3Q/oyCaxnk5aM5SsI1HSl/kNC2OnvjH38UZYusMNiOamuuiSOOM1np6M6BbWp+W20mfeidTq3iUg1Nr1m4sMoB8ilmvt7cW2MVUeQ7JHqSHF1Np8ijem6trX/Rf0zJB4NJbGlduTjk060NpD6ApHvWsMko/oTpnQ6T4sIn5i4AxFNNB8QWbq7twX2bBrz28HU4MiaF1F4H9QgzXVHyWuxcT1j5iPlWB+hqD2q8utF0HouMMzzj8U903xZcUKGUMAYJHMVvHyIsXE6w2/aqyng0usfFWnY7SdpPnFMRdVv0sD9DW6nZNGtx71RcirnSh3eOaAKdlZUGfNZT2LR5Cq8IuSxxP0nNO7di3ZAWVLHJZswe8DsP3oDTgKQWH8s/TuPyB+4qFy/jjLSADEAGZx2/zxXn0dUUkMBq95ABOT+Fz2HfOB+aeWvhmxtBZSXOS247pPbdz7fauY0YBcQ4VreRP6S0mD/nintvqOoH/AOWw33P9qJfooA+I7aaf0WmYMQJBYkeriJ4MAn8Ug2ftV3WLrPqHJMnExwGIBIHsJj7VTujtWsVSIbNop8A+8ZrTOB2H71Es59qklmPrTA2jknOPpXdfDjW0toXZVkzJIAJORz3wK4O9gT4rs+l9P0zWUFzb8yMk4OeIY+0VlmSpFwOqa4pypB+hBrmfiPXA3du0EJtE91LAyfceoCKq13RFtAOl11lhBDE8ervjhTQDOLqNcJlmY5HgGJj7fuKxjFJ2W7ZHU2wMKwZf1ECcQcz74H5pxoNKbilFYmGHpEQCMEgcgH09zmkD6UqofMTE9pJhh5xNS0zXIGxj3B4GQSInz/erkrXZK0dHc0PyxLggqchlIkEnawPH2resselTaUZEPtHEkfqI4BPE0L0/pDMyG47yCXdSxaY28TwSsHuYqz4i6grEJbAZ0cS0RiCEDN/NBJH2FR7G46sAdWuCd4I9XBAJCctBjH1qrSBdQFQsdltiW7MxKkCJ/wBxkcenvNHWeiXbqy0IsAdyzgZyDwCc/wCTRTdI+WBsUDMmKieVJUuyH+g3p+js28KgJjBb1H96Y33OBOTQum0zYPfvPFWaizncMxHFcrk2ZtfQkkc8wOKouqFXdHqParLVwATPeIq4QW84pUBz9y4WI+80r1DGYnHiun1FhQCQe0mlqaUMu+B7eT71S1sVHMHUQxzisua4/pGaa6zpYY+kc0CvRzbBMGt4TjQmiDakrtIMUVY6kysI85PmhrmiKgkmfah7donmQKensmhle1nrMHHP3odG/U05jFAG2ykg96NDxbMDuBNXxT6HbRdZWACcmc5xWhcgnIND3LnAUyImpEgp6sEn/INCiOyw3VbB7CTW7JZZa3cInwcfioaSyCMxnt7VvUdPP8rbfbtTTcXSZVWNrXxTetqFZfmR/N/ejemfFqONt30vP29q5D5Vy1IZpHMjj6VDUkE5Tt+oc10RzSXZLid8er6f/wAVfzWV52LS/wDfWVr+cjgT1+qUHJB5kY8mPpgCgr2ukenkGR4/z+5oHqX6yfJJ/PJ/M0OiZH1qFFUb2Nku/LUepUJyZkz9o7USmoa4wQBecmAQR2iaW6l5Ye+KYdHgKWI9RMZ5Hn6UnpWC2xnouj/MUy3qnd6hBMn3I8j9qAvaAqSJBgx6TP5mmFxi42sJBqtdDb/8OPpK/uIrJSaNKFw0r+PyI/ea01hgYIIPuDTdNDa/8w+jHP5onT2thlL95O0AqV/DAin+UXAT9N0J+dbLjckklZB3bQSB+QMV0RsJ2vQfF5In/wBS/wD81pNMCN7DfJMsY5Pc+O9AdQvhGIlgABOCwEyc+BxSvmwf9KIddUoEBZfUXgId26FUSPH6u4obpmkcupJ2KY7iSPEf3oDqt4kK4K/qIBWIiJMeZNZp+sOoEjdHGfx2qnF8aiEZK9nSXbim78onYrgxuEJkEBvrme3AqrRi5tuKiH5jM2Rn08kgd80iv9WLlSVEqIBx7+3vU7WuuvtVSQY2DbgwSSQT9/xU/jaQ3O2O9DdJcKCXuEkbV/mBBB34wOeTwa6XpHTUtEuwLOe5OAOdoHePJz9OKW/D2kWwpIEuRlvHsPb+tOU1Y/auTLO9RI5MYjUKQYPHOK3cu+kGAQRStNYox3NDajqrD04isNi5DP8AiIWJg9qhZvjicmkqXi5iRzg/8VOTbJaZJnHg1RDZPWatluEMRmIAPFbXVQJnJMe9J79ws+7HmpqGZvE9v+aulRJ06MCueSKDW36SB2I+woTPpJIEY+tGX3M4yMcVNaKKWmST24rV+6IzmatugEePPmg7jArt8GkgKrYB5H1oPVaMEmD9KI1DwJHNUM+JEyatbAot25Gef7VVqCqjnHertZeCr+nI8UsvXAwhjHMR7104o+yWZaQBu5BBnwB2qVxN2zOByI5Nb6VcksBIgSfeOBQZ1ByCTg59vatqEM2cE4EHzWkusGyQe3vQaA42ic8k1FiNwnv/AJFTwRVhmq1Eh+3pAj6zmoXbwICjAAEtjOM0Hc1DZJ4Mft2rasGjMCMDz7fvTUdBZP5YGN4//WsolFuRgrH2rKVjo5jqF4s+f5TH4qq0cj61U9TsnIrorRXsc27BmIEkSCQDJjgz4NRt+kgHEicTE9+ftR2nsbrQuFjOf2Pml9rT7lY7jg8Y5PeoW0Ppha3COGq5dS/+RSyw0+auMjM1DRQwXWN3H7Vb/Gqf5fxSpdQatXUmpcR2dHodasRlTHkQa51nD+vcyGSQQYxOMcRxVN/WbWA2zEdyCcA81K/b9IaTDGIOYxPNaY48dkTd6KNe5IWTMkniPaYoUGrNdhgPA/rVNWuhMsmmnRfSZ8/sKWadNzKvkgfkxXZ2rYVG2gCR2rHPOlX0QdptUduR3wa183P1oKwx28mB2OasYxEd64a3Q29GtQzA4/egL965OQSOZ9u803YDbJEntPag7jl1gxGRAEcUIklYUxIMGQQJ581ZqTLCD/uquwQqyB9Par9FbDOq8SamtgB3bkKQBk/0qVmFPJb/ADit3x/9dl8GP3ia18r1vBj6ewp/oKCb90gjIMiSM4rR1ZCg5x4pdp7hbJPePtRTjtNXX0Qct4lTJzj71cjAgxH+c0me6ZPsKu016VBik40Iv1Tg1G6Ow7RUT6lnwRVAMn34px0MX6xXLHadxAmI9+1UDQtdMMArDPsB3pv0+xHrmSftUEQEXLnf1T7jxW6yAKrahAdrc88z7R7VXZQF+fSMma3dtAx2lgPaPp3qxztuOQOM+2Patr+CBwDbbLN/tIj81oXhMTnmTUNZcM5z3k9yc1TZTn6T9KpDLbZ3ZIGP6dzV6jbkZk8/28ULYBzn/PFWK3oLnPqOD9KYhkiCP1R9ayhEuggHaKys+JR//9k=" alt="Дрон з камерами для спостереження">
+        <img src="https://media.istockphoto.com/id/1234508764/photo/close-up-of-flying-drone-in-city.webp?a=1&b=1&s=612x612&w=0&k=20&c=lIdIt5kbSABcFtnswBvKBeUHc2UiGzifgqIxTgWiboE=" alt="Дрон в бойовому завданні">
+    </div>
+    <h3>1. Розвідка та спостереження</h3>
+    <p>Одне з основних застосувань дронів у військових операціях — це розвідка та спостереження. БПЛА можуть збирати інформацію про ворожі позиції, проводити моніторинг території, не піддаючи ризику життя військових. Завдяки камерам з високою роздільною здатністю та інфрачервоним сенсорам, дрони можуть передавати дані в реальному часі, що дозволяє командуванню приймати рішення на основі актуальної інформації.</p>
+
+    <h3>2. Бойові місії</h3>
+    <p>БПЛА використовуються не тільки для розвідки, а й для здійснення бойових операцій. Наприклад, дрони можуть бути оснащені різними видами озброєнь, такими як ракети або бомби, і використовуватись для знищення важливих цілей. Завдяки точності та можливості досягати важкодоступних місць, вони зменшують ризик для живих військових, забезпечуючи ефективність бойових операцій.</p>
+
+    <h3>3. Логістика та постачання</h3>
+    <p>Дрони також використовуються для доставки вантажів на передову або в зону бойових дій. Це дозволяє зменшити час на постачання та знижує ризики для військових, оскільки безпілотні системи можуть доставляти необхідні ресурси без необхідності використовувати автомобілі або інші транспортні засоби, які можуть бути уразливими для атак.</p>
+
+    <h3>4. Удосконалення технологій дронів</h3>
+    <p>Сучасні дронові технології швидко розвиваються, і в майбутньому ми можемо очікувати появу нових можливостей для їх застосування. Наприклад, вдосконалення автономних систем дозволить дронам самостійно приймати рішення та виконувати місії без втручання людини. Інші напрямки розвитку включають використання дронів для надання медичної допомоги, доставки ліків або обладнання в зону бойових дій.</p>
+
+    <div class="info-box">
+        <h3>Переваги використання дронів у військових операціях:</h3>
+        <ul>
+            <li>Зниження ризику для життя військових</li>
+            <li>Покращення точності бойових операцій</li>
+            <li>Швидке збирання розвідувальної інформації</li>
+            <li>Можливість доставки вантажів у важкодоступні зони</li>
+            <li>Висока ефективність при мінімальних витратах</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>Всі права захищено © 2024 </p>
+</footer>
+
+</body>
+</html>

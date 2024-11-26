@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інформаційні Технології у Військовій Справі</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #34495E;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            background-color: #16A085;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .content-section {
+            padding: 40px 10%;
+            background-color: #ecf0f1;
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        h2 {
+            font-size: 24px;
+            transition: color 0.5s;
+        }
+        h2:hover {
+            color: #16A085;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+            opacity: 0;
+            animation: fadeInText 2s forwards;
+        }
+        footer {
+            background-color: #34495E;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Анімації */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Стилізація зображень */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            max-width: 32%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Інформаційні Технології у Військовій Справі</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="combat-systems.html">Системи управління</a>
+    <a href="mobile-tech.html">Мобільні технології</a>
+    <a href="drones.html">Дронові технології</a>
+    <a href="ai.html">Штучний інтелект</a>
+    <a href="cybersecurity.html">Кібербезпека</a>
+    <a href="more-info.html">Подальші розробки</a>
+</nav>
+
+<div class="content-section">
+    <h2>Роль інформаційних технологій у сучасній військовій справі</h2>
+    <p>Інформаційні технології відіграють критично важливу роль у сучасних бойових операціях. Від управління бойовими діями до підтримки безпеки на полі бою, новітні технології сприяють ефективнішому плануванню, швидшій реакції та зниженню ризиків для особового складу.</p>
+    
+    <div class="image-gallery">
+        <img src="https://files.oaiusercontent.com/file-XWworstSwgCJ82xpgezCUE?se=2024-11-26T14%3A24%3A34Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbd068140-b3aa-4676-bef6-3c3a3bcdaf89.webp&sig=UjRhq3OKf7RqPKySt7Dz7ySjqudpvnkhgNxYIUeuslU%3D" alt="Система управління на полі бою">
+        <img src="https://media.istockphoto.com/id/1394026680/photo/silhouette-of-soldier-are-using-drone-and-laptop-computer-for-scouting-during-military.jpg?b=1&s=612x612&w=0&k=20&c=DvfYrPr3Zk5RHegPAmM78TZhxCGi7vZbAOTdRoJnWeQ=" alt="Використання дронів у військових операціях">
+        <img src="https://media.istockphoto.com/id/879913288/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%B2%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE%D0%B2%D0%B0-%D0%BF%D0%BE%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%96-%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B8%D0%B9-%D1%96%D0%BD%D0%B6%D0%B5%D0%BD%D0%B5%D1%80-%D0%B2%D0%B8%D0%BA%D0%BE%D1%80%D0%B8%D1%81%D1%82%D0%BE%D0%B2%D1%83%D1%94-%D1%80%D0%B0%D0%B4%D1%96%D0%BE-%D1%96-%D0%B0%D1%80%D0%BC%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%B8%D0%B9-%D0%BD%D0%BE%D1%83%D1%82%D0%B1%D1%83%D0%BA-%D0%BA%D0%BB%D0%B0%D1%81%D1%83.jpg?s=612x612&w=0&k=20&c=GcpqTqEMlpUaGxo6rp_PvLlbvhq_1e57S8CiRfFnDnE=" alt="Мобільний додаток для військових командирів">
+    </div>
+
+    <h2>Основні напрямки використання технологій</h2>
+    <p>Сучасні технології у військовій справі охоплюють декілька ключових напрямків, таких як: управління бойовими діями, мобільні технології, дронові системи, штучний інтелект, кібербезпека та багато інших. Кожен із цих напрямків сприяє покращенню ефективності та безпеки операцій на полі бою.</p>
+
+    <div class="image-gallery">
+        <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Кібербезпека та захист даних">
+        <img src="https://media.istockphoto.com/id/1176398436/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%BE%D0%BB%D0%B4%D0%B0%D1%82-%D1%8F%D0%BA%D0%B8%D0%B9-%D0%BD%D0%B0%D0%B3%D0%BB%D1%8F%D0%B4%D0%B0%D1%94-%D0%B7%D0%B0-%D0%B7%D0%B0%D0%BF%D1%83%D1%81%D0%BA%D0%BE%D0%BC-%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B8-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BC%D0%BF%D1%8E%D1%82%D0%B5%D1%80%D1%96.jpg?s=612x612&w=0&k=20&c=SMnxsXUvPp0kNPFJbPEC80i0o732oggZdga9qe8CdEc=" alt="Командний пункт з використанням IT технологій">
+        <img src="https://media.istockphoto.com/id/814367162/photo/soldier-is-using-laptop-computer-and-radio-for-communication-during-military-operation-in-the.jpg?b=1&s=612x612&w=0&k=20&c=JpO3YUja5yo2v7cmRjlXUzDwQeR0b3_M8qzrUj9YNoc=" alt="Бойові роботи та автоматизація">
+    </div>
+
+    <h2>Технології майбутнього в армії</h2>
+    <p>З розвитком нових технологій, таких як штучний інтелект, блокчейн та Інтернет речей (IoT), перспективи застосування інформаційних технологій у військовій справі виглядають дуже обнадійливо. Вони дозволять створювати більш складні і адаптивні бойові системи, покращити координацію між підрозділами і зменшити ризики для військових.</p>
+
+</div>
+
+<footer>
+    <p>Всі права захищено © 2024 </p>
+</footer>
+
+</body>
+</html>

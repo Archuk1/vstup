@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Штучний Інтелект у Військовій Справі</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #34495E;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            background-color: #16A085;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        section {
+            padding: 40px 10%;
+            background-color: #ecf0f1;
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        footer {
+            background-color: #34495E;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .info-box {
+            background-color: #16A085;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInBox 2s forwards;
+        }
+        .info-box h3 {
+            font-size: 1.5em;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInBox 3s forwards;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .form-container button {
+            background-color: #16A085;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #1abc9c;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInBox {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+          
+
+        /* Стилізація зображень */
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            max-width: 32%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Штучний Інтелект у Військовій Справі</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="combat-systems.html">Системи управління</a>
+    <a href="mobile-tech.html">Мобільні технології</a>
+    <a href="drones.html">Дронові технології</a>
+    <a href="cybersecurity.html">Кібербезпека</a>
+    <a href="more-info.html">Подальші розробки</a>
+    
+</nav>
+
+<section>
+    <h2>Штучний Інтелект у Військовій Справі</h2>
+    <p>Штучний інтелект (ШІ) є однією з найбільш перспективних технологій, що знаходять своє застосування в сучасній військовій справі. Він дозволяє значно покращити ефективність ведення бойових операцій, автоматизувати численні процеси та знизити людські помилки. Завдяки потужним алгоритмам і великим обсягам даних, ШІ може швидко обробляти інформацію та приймати рішення, що є критично важливим у бойових умовах.</p>
+    <div class="image-gallery">
+        <img src="https://media.istockphoto.com/id/950356372/photo/soldier-in-virtual-reality-glasses.jpg?b=1&s=612x612&w=0&k=20&c=neoxKWsdU1g0qCOuIvt0EvQFSYYY4ZRdVn2B9Wq5I1E=" alt="Штучний інтелект на полі бою">
+        <img src="https://media.istockphoto.com/id/1355657756/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BE%D1%84%D1%96%D1%86%D0%B5%D1%80-%D0%B2%D1%96%D0%B9%D1%81%D1%8C%D0%BA%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE-%D1%81%D0%BF%D0%BE%D1%81%D1%82%D0%B5%D1%80%D0%B5%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BF%D1%80%D0%B0%D1%86%D1%8E%D1%94-%D0%BD%D0%B0%D0%B4-%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%86%D1%96%D1%94%D1%8E-%D0%B7-%D0%B2%D1%96%D0%B4%D1%81%D1%82%D0%B5%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BC%D1%96%D1%81%D1%82%D0%B0-%D0%B2-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%BC%D1%83.jpg?s=612x612&w=0&k=20&c=1JTs_E4basGvTwAJtMb0JOmCSUBGQy2j_fYKuWHox8I=" alt="Штучний інтелект для управління бойовими системами">
+        <img src="https://media.istockphoto.com/id/577632316/uk/%D1%84%D0%BE%D1%82%D0%BE/%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0-%D1%88%D1%82%D1%83%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D1%96%D0%BD%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D1%82%D1%83.jpg?s=612x612&w=0&k=20&c=u_DU7GpA4hKJNg9KY70rH4XvHKvABfimcfIG7Peu9P4=" alt="Роботизовані військові системи з ШІ">
+    </div>
+    <h3>1. Автономні бойові системи</h3>
+    <p>Одним з основних напрямків застосування ШІ в армії є створення автономних бойових систем. Це можуть бути безпілотні наземні, повітряні та морські платформи, які здатні працювати без участі людини. Вони можуть самостійно виконувати місії, такі як патрулювання, виявлення ворога, а також запускати атаки. Завдяки ШІ, такі системи мають здатність адаптуватися до змінюваних умов та працювати в реальному часі.</p>
+
+    <h3>2. Покращення командних і бойових систем</h3>
+    <p>ШІ застосовується для покращення командних і бойових систем, де він дозволяє автоматично збирати і обробляти дані з різних джерел — від дронів до супутників. Це дозволяє створювати точніші карти боїв, прогнозувати рухи супротивника і оптимізувати рішення в реальному часі. Завдяки системам, що працюють на основі ШІ, можна отримати значну перевагу в командуванні і стратегічному плануванні.</p>
+
+    <h3>3. Аналіз великих даних</h3>
+    <p>ШІ також використовує алгоритми для аналізу великих обсягів даних, що збираються на полі бою. Ці дані можуть включати інформацію з сенсорів, камер, радарів, а також з відкритих джерел. Алгоритми ШІ здатні швидко обробляти ці дані, виявляти патерни та тренди, що допомагає військовим отримувати важливу розвідінформацію та адаптувати стратегію до мінливих умов.</p>
+
+    <h3>4. Моделювання бойових ситуацій</h3>
+    <p>Штучний інтелект також використовується для створення моделювань бойових ситуацій. Це дозволяє тренувати військових, передбачати різні сценарії і шукати оптимальні стратегії. За допомогою ШІ можна швидко проаналізувати, як зміняться умови на полі бою в разі змін у стратегії або ресурсах, що дає можливість краще готуватись до реальних бойових операцій.</p>
+
+    <h3>5. Погляд в майбутнє</h3>
+    <p>В майбутньому застосування ШІ в армії лише зростатиме. Очікується, що ШІ стане важливим інструментом для поліпшення автоматизації, зниження людського фактора та прискорення прийняття рішень на полі бою. Системи з ШІ будуть здатні до самонавчання, що дозволить їм адаптуватись до нових умов і навіть розробляти нові стратегії на основі отриманого досвіду.</p>
+
+    <div class="info-box">
+        <h3>Переваги Штучного Інтелекту у Військовій Справі:</h3>
+        <ul>
+            <li>Покращення точності розвідувальних та бойових операцій</li>
+            <li>Автоматизація стратегічного планування</li>
+            <li>Зниження ризику для життя військових</li>
+            <li>Швидке прийняття рішень на основі великих даних</li>
+            <li>Розвиток автономних бойових систем</li>
+        </ul>
+    </div>
+
+</section>
+
+<footer>
+    <p>Всі права захищено © 2024 </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Системи управління бойовими діями</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            background-color: #16A085;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        section {
+            padding: 40px 10%;
+            background-color: #ecf0f1;
+            margin-top: 20px;
+            animation: slideIn 1s ease-out;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .info-box {
+            background-color: #16A085;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeInBox 2s forwards;
+        }
+        .info-box h3 {
+            font-size: 1.5em;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeInBox 3s forwards;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+        .form-container button {
+            background-color: #16A085;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #1abc9c;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-50%); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        @keyframes fadeInBox {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .image-gallery {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .image-gallery img {
+            max-width: 32%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Системи управління бойовими діями</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="cybersecurity.html">Кібербезпека</a>
+    <a href="mobile-tech.html">Мобільні технології</a>
+    <a href="drones.html">Дронові технології</a>
+    <a href="ai.html">Штучний інтелект</a>
+    <a href="more-info.html">Подальші розробки</a>
+</nav>
+
+<section>
+    <h2>Інновації у системах управління бойовими діями</h2>
+    <p>Системи управління бойовими діями (СУБД) є однією з ключових складових успішного ведення військових операцій у сучасному світі. Вони дозволяють об'єднувати різні види військової техніки, підрозділи та ресурси в єдину мережу, що забезпечує оперативне управління та координацію дій.</p>
+
+    <p>Один із основних аспектів систем управління — це інтеграція новітніх технологій для забезпечення швидкого збору та аналізу даних. Завдяки таким системам, командири можуть отримувати в реальному часі інформацію про ситуацію на полі бою, координувати дії військових підрозділів та приймати рішення в умовах постійних змін.</p>
+
+    <p>Сучасні СУБД включають в себе інтерфейси для роботи з різними типами техніки та зброї, такими як бойові дрони, танки, артилерія, а також безпілотні літаючі апарати (БПЛА). Інтеграція цих систем дозволяє отримати точну картину бою, що знижує ризики та підвищує ефективність військових операцій.</p>
+
+    <p>Основними компонентами СУБД є:</p>
+    <ul>
+        <li>Інтерфейси для отримання даних із різних джерел (сенсори, радарні системи, супутники).</li>
+        <li>Системи для аналітики та прогнозування розвитку бойових дій на основі зібраної інформації.</li>
+        <li>Системи для управління вогневими засобами та бойовою технікою в реальному часі.</li>
+        <li>Програмне забезпечення для забезпечення зв'язку та координації між підрозділами.</li>
+    </ul>
+
+    <p>Управління бойовими діями за допомогою таких систем дозволяє значно скоротити час на ухвалення рішень і покращити ефективність командування під час бойових дій. Прогрес у цій галузі вже змінив спосіб ведення війни: сьогодні бойові дії не обмежуються лише фізичним полем бою, але також включають в себе кібернетичні операції та інші новітні технології.</p>
+
+    <p>Особливо важливим напрямком розвитку СУБД є використання штучного інтелекту (ШІ) для аналізу великих обсягів даних і автоматичного прийняття рішень у критичних ситуаціях. Застосування ШІ дозволяє системам прогнозувати ворожі дії та визначати оптимальні стратегії ведення бою, що дає перевагу на полі бою.</p>
+
+    <div class="info-box">
+        <h3>Основні переваги систем управління бойовими діями:</h3>
+        <ul>
+            <li>Швидке прийняття рішень на основі реального часу</li>
+            <li>Покращена координація та зв'язок між підрозділами</li>
+            <li>Інтеграція з різними технологіями (дрони, артилерія, танки)</li>
+            <li>Зниження ризиків та втрат завдяки точності інформації</li>
+        </ul>
+    </div>
+
+    <p>Завдяки таким інноваціям, сучасні армії можуть значно підвищити свою ефективність та реагувати на змінні бойові умови з високою швидкістю і точністю.</p>
+
+</section>
+
+<footer>
+    <p>Всі права захищено © 2024 </p>
+</footer>
+
+</body>
+</html>
